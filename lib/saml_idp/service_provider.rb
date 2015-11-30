@@ -16,6 +16,7 @@ module SamlIdp
     delegate :config, to: :SamlIdp
 
     def valid?
+      puts "attributes: #{attributes}"
       attributes.present?
     end
 
